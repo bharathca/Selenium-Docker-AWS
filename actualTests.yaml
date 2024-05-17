@@ -1,0 +1,21 @@
+version: "3"
+services:
+  vendorPortal:
+    image: bharathca/selenium
+    environment:
+      - BROWSER=${BROWSER}
+      - HUB_HOST=selenium-hub
+      - THREADCOUNT=3
+      - TESTSUITES=vendorPortal.xml
+    volumes:
+      - ./output/vendorPortal:/home/selenium-docker/test-output
+
+  flightReservation:
+    image: bharathca/selenium
+    environment:
+      - BROWSER=${BROWSER}
+      - HUB_HOST=selenium-hub
+      - THREADCOUNT=4
+      - TESTSUITES=flight-reservation.xml
+    volumes:
+      - ./output/flightReservation:/home/selenium-docker/test-output

@@ -1,0 +1,11 @@
+{
+    "firstName": "Johan",
+    "lastName": "Cena",
+    "email": "jc",
+    "password": "test",
+    "street": "123 main street",
+    "city": "atlanta",
+    "zip": "123",
+    "passengersCount": "2",
+    "expectedPrice": "$1169 USD"
+}

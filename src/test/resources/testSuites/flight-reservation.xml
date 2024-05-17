@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Flight Reservations" parallel="tests" thread-count="5">
+  <test thread-count="5" name="Test with 1 passenger">
+<!--	<parameter name="noOfPassengers" value="1"></parameter>
+	<parameter name="expectedPrice" value="$584 USD"></parameter>-->
+	<parameter name="testDataPath" value="./testData/flightReservation/passenger-1.json"></parameter>
+
+    <classes>
+      <class name="com.flightReservations.tests.FlightReservationTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <test thread-count="5" name="Test with 2 passenger">
+<!--	<parameter name="noOfPassengers" value="2"></parameter>
+	<parameter name="expectedPrice" value="$1169 USD"></parameter>-->
+	<parameter name="testDataPath" value="./testData/flightReservation/passenger-2.json"></parameter>
+    <classes>
+      <class name="com.flightReservations.tests.FlightReservationTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  
+  <test thread-count="5" name="Test with 3 passenger">
+<!--	<parameter name="noOfPassengers" value="3"></parameter>
+	<parameter name="expectedPrice" value="$1753 USD"></parameter>-->
+	<parameter name="testDataPath" value="./testData/flightReservation/passenger-3.json"></parameter>
+    <classes>
+      <class name="com.flightReservations.tests.FlightReservationTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  
+  <test thread-count="5" name="Test with 4 passenger">
+	<!--<parameter name="noOfPassengers" value="4"></parameter>
+	<parameter name="expectedPrice" value="$2338 USD"></parameter>-->
+	<parameter name="testDataPath" value="./testData/flightReservation/passenger-4.json"></parameter>
+    <classes>
+      <class name="com.flightReservations.tests.FlightReservationTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+</suite> <!-- Suite -->

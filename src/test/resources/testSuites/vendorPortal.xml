@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="VendorPortal" parallel="tests" thread-count="5">
+
+
+
+  <test thread-count="5" name="user-sam">
+	<parameter name="testDataPath" value="./testData/vendorPortal/sam.json"></parameter>
+	<!--<parameter name="browser" value="chrome"></parameter>-->
+    <classes>
+      <class name="com.vendorPortal.tests.VendorPortalTest"/>
+    </classes>
+  </test> 
+  
+  <test thread-count="5" name="user-john">
+	<parameter name="testDataPath" value="./testData/vendorPortal/john.json"></parameter>
+    <!--<parameter name="browser" value="firefox"></parameter>-->
+    <classes>
+      <class name="com.vendorPortal.tests.VendorPortalTest"/>
+    </classes>
+  </test> 
+  
+  <test thread-count="5" name="user-mike">
+	<parameter name="testDataPath" value="./testData/vendorPortal/mike.json"></parameter>
+    <!--<parameter name="browser" value="chrome"></parameter>-->
+    <classes>
+      <class name="com.vendorPortal.tests.VendorPortalTest"/>
+    </classes>
+  </test> 
+  
+  
+  
+
+  
+  
+</suite> <!-- Suite -->
