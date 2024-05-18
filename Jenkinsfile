@@ -7,7 +7,7 @@ pipeline{
         stage('Build the Jar') {
             
             steps {
-                bat "mvn clean package -DskipTests"
+                sh "mvn clean package -DskipTests"
                         }
            
         } 
@@ -16,7 +16,7 @@ pipeline{
             
             steps {
                 
-                bat "docker build -t=bharathca/selenium ."
+                sh "docker build -t=bharathca/selenium ."
             
             }
            
@@ -26,7 +26,7 @@ pipeline{
             
             steps {
                 
-                bat "docker push bharathca/selenium"
+                sh "docker push bharathca/selenium"
             
             }
            
